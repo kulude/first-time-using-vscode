@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
+import 'package:recipe_app/screens/image_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,11 +33,32 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  int _shuffle = 1;
 
   void _incrementCounter() {
     setState(() {
       _counter++;
     });
+  }
+
+  void _shuffleImages() {
+    var random = Random();
+    setState(() {
+      _shuffle = random.nextInt(6) + 1;
+    });
+  }
+
+  void _navigate(String imageUrl) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ImagePage(imageUrl: imageUrl)),
+    );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _shuffleImages(); // Initialize with a random image on startup
   }
 
   @override
@@ -54,6 +77,21 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            SizedBox(height: 10),
+            GestureDetector(
+              onTap: () {
+                _navigate('assets/images/pexels-$_shuffle.jpg');
+              },
+              child: SizedBox(
+                height: 100,
+                width: 90,
+                child: Image.asset('assets/images/pexels-$_shuffle.jpg'),
+              ),
+            ),
+            SizedBox(height: 50),
+            TextButton(onPressed: _shuffleImages, child: Text('shuffle')),
+            SizedBox(height: 20),
+            Text('shuffle: $_shuffle'),
           ],
         ),
       ),
