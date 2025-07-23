@@ -1,0 +1,81 @@
+2025-07-23 16:35:59.683: [INFO][Sync] Reset engine, reason: 8
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Bookmarks
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Preferences
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Passwords
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Autofill Profiles
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Autofill
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Extensions
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Sessions
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Extension settings
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: History Delete Directives
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Device Info
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: User Consents
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Send Tab To Self
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Web Apps
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: History
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Saved Tab Group
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: WebAuthn Credentials
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Collection
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Edge E Drop
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Edge Hub App Usage
+2025-07-23 16:35:59.684: [INFO][Sync] Stopped: Edge Wallet
+2025-07-23 16:35:59.685: [INFO][Sync] SyncState after authenticated was: NotSignedIn
+2025-07-23 16:36:00.239: [INFO][Sync] Reset engine, reason: 8
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Bookmarks
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Preferences
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Passwords
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Autofill Profiles
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Autofill
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Extensions
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Sessions
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Extension settings
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: History Delete Directives
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Device Info
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: User Consents
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Send Tab To Self
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Web Apps
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: History
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Saved Tab Group
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: WebAuthn Credentials
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Collection
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Edge E Drop
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Edge Hub App Usage
+2025-07-23 16:36:00.239: [INFO][Sync] Stopped: Edge Wallet
+2025-07-23 16:36:02.237: [INFO][Sync] Try to start sync engine
+2025-07-23 16:36:02.239: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-07-23 16:36:02.239: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-07-23 16:36:02.239: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-07-23 16:36:02.239: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-07-23 16:36:02.239: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-07-23 16:36:26.631: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-07-23 16:36:26.632: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-07-23 16:36:26.632: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-07-23 16:36:26.632: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-07-23 16:36:32.248: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: The request runs exceeded the set maximum duration. for account type: MSA
+2025-07-23 16:36:32.248: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-07-23 16:36:32.248: [WARN][Sync]    Token is empty
+2025-07-23 16:36:32.248: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-07-23 16:36:32.254: [INFO][Sync] Connection status changed to: 2
+2025-07-23 16:36:35.397: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-07-23 16:36:35.397: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-07-23 16:36:35.397: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-07-23 16:36:35.397: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-07-23 16:37:02.266: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: The request runs exceeded the set maximum duration. for account type: MSA
+2025-07-23 16:37:02.266: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-07-23 16:37:02.266: [WARN][Sync]    Token is empty
+2025-07-23 16:37:02.266: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-07-23 16:37:02.270: [INFO][Sync] Connection status changed to: 2
+2025-07-23 16:37:07.643: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-07-23 16:37:07.643: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-07-23 16:37:07.643: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-07-23 16:37:07.643: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-07-23 16:37:33.398: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-07-23 16:37:33.398: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-07-23 16:37:33.398: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-07-23 16:37:33.398: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-07-23 16:37:33.398: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-07-23 16:37:35.882: [INFO][Sync] Reset engine, reason: 0
+2025-07-23 16:37:35.882: [INFO][Sync] Reset engine with reason: 0
+2025-07-23 16:37:35.882: [INFO][SyncSchedulerImpl::OnSyncNetworkError] Syncer error: Network error (ERR_ABORTED)
+2025-07-23 16:37:35.882: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Syncer error: Success
+2025-07-23 16:37:35.882: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
