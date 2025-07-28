@@ -31,7 +31,12 @@ class FirstService extends ChangeNotifier {
     notifyListeners();
   }
 
-  void addImageObject(String title, String imageUrl, int id, int imageNumber) {
+  void addImageObject(
+    String title,
+    String imageUrl,
+    String id,
+    int imageNumber,
+  ) {
     if (title.isNotEmpty && imageUrl.isNotEmpty) {
       final newObject = ImageClass(
         imageUrl: imageUrl,

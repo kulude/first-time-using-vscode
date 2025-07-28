@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_app/screens/google_page.dart';
 import 'dart:math';
 import 'package:recipe_app/screens/image_page.dart';
 
@@ -28,11 +29,19 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void _navigate(String imageUrl) {
-    Navigator.push(
+  String _imageUrl = 'assets/images/pexels-5.jpg';
+
+  void _navigate(BuildContext context, String imageUrl) async {
+    final result = await Navigator.push<String>(
       context,
       MaterialPageRoute(builder: (context) => ImagePage(imageUrl: imageUrl)),
     );
+    if (result != null) {
+      setState(() {
+        _imageUrl = result;
+      });
+    }
+    print('Returned: ${result ?? 'nothing was returned'}');
   }
 
   @override
@@ -60,16 +69,59 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 10),
             GestureDetector(
               onTap: () {
-                _navigate('assets/images/pexels-$_shuffle.jpg');
+                // final String? resilt = await Navigator.push<String>(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) => ImagePage(
+                //       imageUrl: 'assets/images/pexels-$_shuffle.jpg',
+                //     ),
+                //   ),
+                // );
+                // setState(() {
+                //   _imageUrl = resilt ?? 'assets/images/pexels-$_shuffle.jpg';
+                // });
+                // ScaffoldMessenger.of(context).showSnackBar(
+                //   SnackBar(
+                //     content: Text(
+                //       'Returned: ${resilt ?? 'nothing was returned'}',
+                //     ),
+                //   ),
+                // );
+                _navigate(context, 'assets/images/pexels-$_shuffle.jpg');
               },
-              child: SizedBox(
-                height: 100,
-                width: 90,
-                child: Image.asset('assets/images/pexels-$_shuffle.jpg'),
+              child: Row(
+                children: [
+                  SizedBox(
+                    height: 100,
+                    child: Image.asset('assets/images/pexels-$_shuffle.jpg'),
+                  ),
+                  SizedBox(width: 20),
+                  SizedBox(
+                    height: 100,
+                    width: 90,
+                    child: Image.asset(
+                      'assets/images/pexels-${_imageUrl.split('-').last}',
+                    ),
+                  ),
+                ],
               ),
             ),
             SizedBox(height: 50),
-            TextButton(onPressed: _shuffleImages, child: Text('shuffle')),
+            Row(
+              children: [
+                TextButton(onPressed: _shuffleImages, child: Text('shuffle')),
+                SizedBox(width: 20),
+                OutlinedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => GooglePage()),
+                    );
+                  },
+                  child: Text('To google page'),
+                ),
+              ],
+            ),
             SizedBox(height: 20),
             Text('shuffle: $_shuffle'),
           ],

@@ -1,4 +1,3 @@
-
 const imageList = [
   'assets/images/pexels-1.jpg',
   'assets/images/pexels-2.jpg',
@@ -7,10 +6,11 @@ const imageList = [
   'assets/images/pexels-5.jpg',
   'assets/images/pexels-6.jpg',
 ];
+
 class ImageClass {
   final String imageUrl;
   final String title;
-  final int id;
+  final String id;
   final int imageNumber;
 
   const ImageClass({
